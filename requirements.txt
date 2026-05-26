@@ -21,6 +21,7 @@ huggingface_hub==1.11.0
 idna==3.11
 itsdangerous==2.2.0
 Jinja2==3.1.6
+joblib==1.5.3
 markdown-it-py==4.0.0
 MarkupSafe==3.0.3
 marshmallow==3.26.2
