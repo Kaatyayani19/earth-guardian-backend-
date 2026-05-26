@@ -35,6 +35,12 @@ model = smp.DeepLabV3Plus(
     classes=1,
     activation=None
 )
+from huggingface_hub import hf_hub_download
+
+model_path = hf_hub_download(
+    repo_id="Kaatyayani/earth-guardian-model",
+    filename="segmentation_model.pth"
+)
 
 model.load_state_dict(torch.load("segmentation_model.pth", map_location=device))
 model.to(device)
