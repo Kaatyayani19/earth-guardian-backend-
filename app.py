@@ -42,7 +42,7 @@ model_path = hf_hub_download(
     filename="segmentation_model.pth"
 )
 
-model.load_state_dict(torch.load("segmentation_model.pth", map_location=device))
+model.load_state_dict(torch.load(model_path, map_location=device))
 model.to(device)
 model.eval()
 
